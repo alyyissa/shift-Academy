@@ -7,7 +7,7 @@ const Footer = () => {
     <footer class="p-4 bg-white sm:p-6 dark:bg-gray-800">
     <div class="mx-auto max-w-7xl">
         <div class="md:flex md:justify-around">
-            <div class="mb-6 md:mb-0">
+            <div class="mb-6 flex justify-center">
                 <Link to="/" class="flex items-center">
                     <img src={assets.logo} class="mr-3 h-8" alt="FlowBite Logo" />
                 </Link>
@@ -48,7 +48,7 @@ const Footer = () => {
                 </div>
             </div>
         </div>
-        <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
+        <hr class="my-4 border-gray-200 sm:mx-auto dark:border-gray-700" />
         <div class="sm:flex sm:items-center sm:justify-between">
             <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2022 <a href="https://flowbite.com" class="hover:underline">Flowbite™</a>. All Rights Reserved.
             </span>

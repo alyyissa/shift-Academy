@@ -25,13 +25,13 @@ const Signup = () => {
 
   if (loading) return <Loading />;
   return (
-    <div className="bg-cover bg-no-repeat bg-center h-[110vh] flex justify-center items-center px-3 sm:px-4 md:px-11 lg:px-13 xl:px-14 2xl:px-16"
+    <div className="bg-cover bg-no-repeat bg-center h-screen flex justify-center items-center px-3 sm:px-4 md:px-11 lg:px-13 xl:px-14 2xl:px-16"
     style={{ backgroundImage: `url(${assets.background})` }}>
         <div  className="flex justify-center items-center flex-col">
-            <div className="relative z-[1] max-w-[500px] ">
+            <div className="relative max-w-[500px]">
                 <div className={`${styles["login-page"]}`}>
                     <form
-                    className={`${styles["signup-form"]} sm:w-[450px] w-full bg-[#fff] border-[1px] border-solid border-transparent rounded-[30px]`}
+                    className={`${styles["signup-form"]} sm:w-[450px] w-full bg-[#fff] border border-solid border-transparent rounded-[30px]`}
                     method="post"
                     >
                         <div className={`${styles.imgcontainer} flex justify-center relative mt-[24px] mb-[12px]`}>
@@ -44,7 +44,7 @@ const Signup = () => {
                                 <input
                                 type="text"
                                 placeholder="Enter Username"
-                                className="focus:rounded-[5px] focus:border-b-[2px] focus:border-solid focus:border-[#5076db] focus:outline-[0] w-full inline-block transition-all duration-[0.3s] ease-in-out rounded-[5px] border-b-[2px] text-[14px] text-[#666] bg-[#f8f8f8] border-solid border-[#ccc] py-[12px] px-[20px] my-[8px]"
+                                className="focus:rounded-[5px] focus:border-b-2 focus:border-solid focus:border-coprimary focus:outline-0 w-full inline-block transition-all duration-300 ease-in-out rounded-[5px] border-b-2 text-[14px] text-[#666] bg-[#f8f8f8] border-solid border-[#ccc] py-[12px] px-[20px] my-[8px]"
                                 name="uname"
                                 required
                                 />
@@ -54,7 +54,7 @@ const Signup = () => {
                                 <input
                                 type="email"
                                 placeholder="Enter Email"
-                                className="focus:rounded-[5px] focus:border-b-[2px] focus:border-solid focus:border-[#5076db] focus:outline-[0] w-full inline-block transition-all duration-[0.3s] ease-in-out rounded-[5px] border-b-[2px] text-[14px] text-[#666] bg-[#f8f8f8] border-solid border-[#ccc] py-[12px] px-[20px] my-[8px]"
+                                className="focus:rounded-[5px] focus:border-b-2 focus:border-solid focus:border-[#5076db] focus:outline-[0] w-full inline-block transition-all duration-[0.3s] ease-in-out rounded-[5px] border-b-[2px] text-[14px] text-[#666] bg-[#f8f8f8] border-solid border-[#ccc] py-[12px] px-[20px] my-[8px]"
                                 name="email"
                                 required
                                 />
