@@ -20,11 +20,12 @@ import Courses from './pages/Courses'
 import Admin from './pages/Admin/Admin'
 import Cart from './pages/Cart'
 import Profile from './pages/Profile'
+import Footer from './components/Footer'
 
 function App() {
   return (
     <div>
-      <Navbar />
+      <Navbar/>
       <Routes>
         <Route path='/' element={<Home />}/>
         <Route path='/login' element={<Login />}/>
@@ -53,6 +54,7 @@ function App() {
           {/* no routes yet */}
         </Route>
       </Routes>
+      <Footer/>
     </div>
   )
 }
