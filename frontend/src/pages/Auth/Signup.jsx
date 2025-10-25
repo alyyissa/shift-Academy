@@ -121,7 +121,7 @@ const Signup = () => {
                             </div>
 
                             <label
-                            className={`${styles["label-container"]} relative inline-block pl-[30px] my-3 text-[14px] text-[#868686] leading-[25px]`}
+                            className={`${styles["label-container"]} relative inline-block pl-[30px] my-5 text-[14px] text-[#868686] leading-[25px] ml-5`}
                             >
                                 I agree with{" "}
                                 <a href="#" className="text-coprimary font-semibold underline decoration-1">

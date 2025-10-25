@@ -11,7 +11,7 @@ const Hero = () => {
           <path d="M0,0 C48.8902582,6.27314026 86.2235915,9.40971039 112,9.40971039 C137.776408,9.40971039 175.109742,6.27314026 224,0 L224,12.0441132 L0,12.0441132 L0,0 Z" />
         </svg>
       </div>
-      <div className="px-3 py-12 mx-auto sm:max-w-xl md:max-w-full lg:max-w-7xl md:px-24 lg:px-8 lg:py-20">
+      <div className="px-3 py-30 md:py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-0xl md:px-24 lg:px-8 lg:py-40">
         <div className="relative max-w-2xl sm:mx-auto sm:max-w-xl md:max-w-3xl text-center">
           <h2 className="mb-6 font-sans text-3xl font-bold tracking-tight text-white sm:text-5xl sm:leading-none">
             Your CS Learning Hub
