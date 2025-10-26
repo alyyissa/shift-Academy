@@ -9,7 +9,7 @@ const Section1 = () => {
         Title="Why Choose Our CS Courses?"
         Desc="Explore interactive lessons, hands-on exercises, and real university-level exams built to help you master every CS subject."
         />
-        <div className="flex justify-center items-center gap-x-5 gap-y-12 lg:gap-y-0 flex-wrap md:flex-wrap lg:flex-nowrap lg:flex-row lg:justify-between lg:gap-x-8">
+        <div className="flex justify-center items-center gap-x-5 gap-y-12 lg:gap-y-0 flex-wrap md:flex-wrap lg:flex-nowrap lg:flex-row lg:justify-between lg:gap-x-8 mt-15">
           <div className="relative w-full text-center max-md:max-w-sm max-md:mx-auto group md:w-2/5 lg:w-1/4">
             <div
               className="bg-indigo-50 rounded-lg flex justify-center items-center mb-5 w-20 h-20 mx-auto cursor-pointer transition-all duration-500 group-hover:bg-indigo-600">
