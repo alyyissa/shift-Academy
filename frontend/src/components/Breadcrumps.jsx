@@ -36,9 +36,9 @@ const Breadcrumbs = () => {
               />
             </svg>
             {isLast ? (
-              <span className="text-indigo-500 capitalize">{name}</span>
+              <span className="text-indigo-500 capitalize ">{name}</span>
             ) : (
-              <Link to={routeTo} className="capitalize hover:text-indigo-500">
+              <Link to={routeTo} className="capitalize hover:text-indigo-500 underline">
                 {name}
               </Link>
             )}
