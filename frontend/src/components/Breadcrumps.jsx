@@ -22,7 +22,7 @@ const Breadcrumbs = () => {
         const isLast = index === pathnames.length - 1;
 
         return (
-          <div key={name} className="flex items-center space-x-1">
+          <div key={routeTo} className="flex items-center space-x-1">
             <svg
               width="20"
               height="20"
