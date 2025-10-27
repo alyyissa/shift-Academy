@@ -3,6 +3,7 @@ import Hero from '../components/Home/Hero'
 import Loading from '../components/Loading/Loading';
 import Stats from '../components/Home/Stats';
 import Section1 from '../components/Home/Section1';
+import Section2 from '../components/Home/Section2';
 
 const Home = () => {
   const [loading, setLoading] = useState(true)
@@ -16,10 +17,11 @@ const Home = () => {
 
     if (loading) return <Loading />;
   return (
-    <div className='bg-primary' >
+    <div>
       <Hero />
       <Stats />
       <Section1 />
+      <Section2 />
     </div>
   )
 }

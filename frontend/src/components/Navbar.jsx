@@ -43,7 +43,7 @@ const Navbar = () => {
   return(
     <>
       <div
-        className={`px-3 sm:px-4 md:px-11 lg:px-13 xl:px-14 2xl:px-16 relative top-0
+        className={`px-3 sm:px-4 md:px-11 lg:px-13 xl:px-12 2xl:px-16 relative top-0
         bg-bgNav py-4 md:py-5 transition-transform duration-400 w-full z-50 flex justify-between
         `}
         style={{
