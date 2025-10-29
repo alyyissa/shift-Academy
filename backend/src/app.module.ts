@@ -12,6 +12,8 @@ import { VideoModule } from './video/video.module';
 import { SummaryModule } from './summary/summary.module';
 import { AnswerModule } from './answer/answer.module';
 import { PaymentModule } from './payment/payment.module';
+import { MessageModule } from './message/message.module';
+import { RateModule } from './rate/rate.module';
 
 @Module({
   imports: [
@@ -34,7 +36,9 @@ import { PaymentModule } from './payment/payment.module';
     VideoModule,
     SummaryModule,
     AnswerModule,
-    PaymentModule
+    PaymentModule,
+    MessageModule,
+    RateModule 
     ],
   controllers: [AppController],
   providers: [AppService],
