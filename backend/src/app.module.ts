@@ -4,6 +4,14 @@ import { AppService } from './app.service';
 import { TypeOrmModule } from '@nestjs/typeorm';
 import { UserModule } from './user/user.module';
 import { ConfigModule } from '@nestjs/config';
+import { UniversityModule } from './university/university.module';
+import { CourseModule } from './course/course.module';
+import { ChapterModule } from './chapter/chapter.module';
+import { QuestionModule } from './question/question.module';
+import { VideoModule } from './video/video.module';
+import { SummaryModule } from './summary/summary.module';
+import { AnswerModule } from './answer/answer.module';
+import { PaymentModule } from './payment/payment.module';
 
 @Module({
   imports: [
@@ -18,7 +26,15 @@ import { ConfigModule } from '@nestjs/config';
       autoLoadEntities: true,
       synchronize: true,
     }),
-    UserModule
+    UserModule,
+    UniversityModule,
+    CourseModule,
+    ChapterModule,
+    QuestionModule,
+    VideoModule,
+    SummaryModule,
+    AnswerModule,
+    PaymentModule
     ],
   controllers: [AppController],
   providers: [AppService],
