@@ -23,7 +23,7 @@ import { RateModule } from './rate/rate.module';
       host: process.env.DB_HOST,
       port: process.env.DB_PORT as any,
       username: process.env.DB_USERNAME,
-      password: process.env.PASSWORD,
+      password: process.env.PASSWORD, 
       database: process.env.DATABASE,
       autoLoadEntities: true,
       synchronize: true,
