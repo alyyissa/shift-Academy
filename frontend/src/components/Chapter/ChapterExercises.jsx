@@ -10,7 +10,9 @@ const ChapterExercises = () => {
           <div className='sticky top-0 hidden h-dvh flex-col gap-12 overflow-hidden bg-white p-6 backdrop-blur-sm [mask:linear-gradient(black,black,black,transparent)] lg:flex'>
             <div className='mt-4 flex items-center flex-col'>
               <img src={assets.logo} alt="" className=''/>
-              <CircularTimer />
+              <CircularTimer 
+              minutes="10"
+              />
               <ol start="1" className="space-y-2 px-4 mt-10"><li className="text-theme list-decimal pl-1 text-base">What is JSX in React?</li><li className=" list-decimal pl-1 text-base">React components must always return a single JSX element.</li><li className=" list-decimal pl-1 text-base">What is the purpose of React components?</li><li className=" list-decimal pl-1 text-base">Which of the following are valid React lifecycle methods? (Select all that apply)</li><li className=" list-decimal pl-1 text-base">What will be the output of the following React code?</li><li className=" list-decimal pl-1 text-base">In React, props are used to pass data from parent components to child components.</li><li className=" list-decimal pl-1 text-base">What is the output of the following code snippet?</li><li className=" list-decimal pl-1 text-base">Which of the following are valid ways to conditionally render content in React? (Select all that apply)</li><li className=" list-decimal pl-1 text-base">In React, what is the purpose of keys in lists?</li><li className=" list-decimal pl-1 text-base">What will be the result of the following React code?</li><li className=" list-decimal pl-1 text-base">React uses a virtual DOM to optimize rendering performance.</li></ol>
             </div>
           </div>

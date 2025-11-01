@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 
-const CircularTimer = () => {
-  const totalSeconds = 10 * 60; // 10 minutes
+const CircularTimer = ({minutes}) => {
+  const totalSeconds = {minutes} * 60; // 10 minutes
   const [secondsLeft, setSecondsLeft] = useState(totalSeconds);
 
   useEffect(() => {
