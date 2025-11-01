@@ -1,1 +1,6 @@
-export class CreateQuestionDto {}
+import { IsNumber } from "class-validator";
+
+export class CreateQuestionDto {
+    @IsNumber()
+    id: number
+}
