@@ -1,9 +1,12 @@
 import { Injectable } from '@nestjs/common';
 import { CreateRateDto } from './dto/create-rate.dto';
 import { UpdateRateDto } from './dto/update-rate.dto';
+import { UserService } from 'src/user/user.service';
 
 @Injectable()
 export class RateService {
+  constructor(private readonly userService: UserService){}
+  
   create(createRateDto: CreateRateDto) {
     return 'This action adds a new rate';
   }
