@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 
 const CircularTimer = ({minutes}) => {
-  const totalSeconds = {minutes} * 60; // 10 minutes
+  const totalSeconds = minutes * 60; // 10 minutes
   const [secondsLeft, setSecondsLeft] = useState(totalSeconds);
 
   useEffect(() => {
@@ -13,9 +13,9 @@ const CircularTimer = ({minutes}) => {
     return () => clearInterval(interval);
   }, [secondsLeft]);
 
-  const minutes = Math.floor(secondsLeft / 60);
+  const mins = Math.floor(secondsLeft / 60);
   const seconds = secondsLeft % 60;
-  const formattedTime = `${minutes}:${seconds.toString().padStart(2, "0")}`;
+  const formattedTime = `${mins}:${seconds.toString().padStart(2, "0")}`;
 
   const progressDeg = ((totalSeconds - secondsLeft) / totalSeconds) * 360;
 
