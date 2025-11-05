@@ -23,7 +23,7 @@ const Hero = () => {
             </span>
           </h2>
           <p className="mb-6 text-base font-thin tracking-wide text-gray-300 md:text-lg">
-            Browse chapters, solve MCQs, and prepare for success. Discover video explanations, practical exercises, and tests designed to help you master every course at your own pace.
+            Visual Studio Edit
           </p>
             <button
               className="font-semibold b-2 inline-flex items-center justify-center h-12 px-6 cursor-pointer tracking-wide text-white transition duration-200 rounded shadow-md w-auto bg-deep-purple-accent-400 bg-coprimary focus:shadow-outline focus:outline-none mb-4 border b-2 hover:bg-transparent hover:text-coprimary border-coprimary"
