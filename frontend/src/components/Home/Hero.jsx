@@ -23,12 +23,12 @@ const Hero = () => {
             </span>
           </h2>
           <p className="mb-6 text-base font-thin tracking-wide text-gray-300 md:text-lg">
-            Visual Studio Edit
+            HEre you can monitor and extend your knowladge to reach your goals
           </p>
             <button
               className="font-semibold b-2 inline-flex items-center justify-center h-12 px-6 cursor-pointer tracking-wide text-white transition duration-200 rounded shadow-md w-auto bg-deep-purple-accent-400 bg-coprimary focus:shadow-outline focus:outline-none mb-4 border b-2 hover:bg-transparent hover:text-coprimary border-coprimary"
             >
-              Get Started
+              Start with us
             </button>
           <p className="max-w-md mb-10  font-thin tracking-wide text-gray-500 text-sm sm:mx-auto md:mb-12">
             Scroll down to explore chapters, tests, and resources made for computer science students.

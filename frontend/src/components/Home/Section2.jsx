@@ -6,7 +6,7 @@ const Section2 = () => {
 
     const faqs = [
         {
-            question: "How to use this component?",
+            question: "Why you should use our website?",
             answer: "To use this component, you need to import it in your project and use it in your JSX code. Here's an example of how to use it:",
         },
         {
