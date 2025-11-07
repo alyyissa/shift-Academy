@@ -11,9 +11,9 @@ const Hero = () => {
           <path d="M0,0 C48.8902582,6.27314026 86.2235915,9.40971039 112,9.40971039 C137.776408,9.40971039 175.109742,6.27314026 224,0 L224,12.0441132 L0,12.0441132 L0,0 Z" />
         </svg>
       </div>
-      <div className="px-3 py-30 md:py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-0xl md:px-24 lg:px-8 lg:py-18 2xl:py-40">
+      <div className="px-3 py-40 md:py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-0xl md:px-40 lg:px-8 lg:py-20 2xl:py-57">
         <div className="relative max-w-2xl sm:mx-auto sm:max-w-xl md:max-w-3xl text-center">
-          <h2 className="mb-6 font-sans text-3xl font-bold tracking-tight text-white sm:text-5xl sm:leading-none">
+          <h2 className="mb-6 font-sans text-3xl xl:text-5xl font-bold tracking-tight text-white sm:text-5xl sm:leading-none">
             Your CS Learning Hub
             <br className="hidden md:block" />
             Courses, Chapters & Tests {' '}
@@ -22,15 +22,15 @@ const Hero = () => {
               <div className="w-full h-1 -mt-1 bg-coprimary" />
             </span>
           </h2>
-          <p className="mb-6 text-base font-thin tracking-wide text-gray-300 md:text-lg">
-            HEre you can monitor and extend your knowladge to reach your goals
+          <p className="mb-6 text-base font-thin tracking-wide text-gray-300 md:text-lg 2xl:text-xl">
+            Here you can monitor and extend your knowladge to reach your goals
           </p>
             <button
               className="font-semibold b-2 inline-flex items-center justify-center h-12 px-6 cursor-pointer tracking-wide text-white transition duration-200 rounded shadow-md w-auto bg-deep-purple-accent-400 bg-coprimary focus:shadow-outline focus:outline-none mb-4 border b-2 hover:bg-transparent hover:text-coprimary border-coprimary"
             >
               Start with us
             </button>
-          <p className="max-w-md mb-10  font-thin tracking-wide text-gray-500 text-sm sm:mx-auto md:mb-12">
+          <p className="max-w-md mb-10  font-thin tracking-wide text-gray-500 text-sm sm:mx-auto md:mb-12 xl:text-lg">
             Scroll down to explore chapters, tests, and resources made for computer science students.
           </p>
           <a
