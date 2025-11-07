@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react'
-import Title from '../components/Title'
+import Title from '../components/Alerts/Title'
 import Loading from '../components/Loading/Loading';
 
 const Courses = () => {

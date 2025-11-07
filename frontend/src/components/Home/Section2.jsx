@@ -1,5 +1,5 @@
 import React from 'react'
-import Title from '../Title';
+import Title from '../Alerts/Title';
 
 const Section2 = () => {
   const [openIndex, setOpenIndex] = React.useState(null);

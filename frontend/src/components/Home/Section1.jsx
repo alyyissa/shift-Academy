@@ -1,5 +1,5 @@
 import React from 'react'
-import Title from '../Title'
+import Title from '../Alerts/Title'
 
 const Section1 = () => {
   return (

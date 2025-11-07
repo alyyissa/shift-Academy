@@ -1,4 +1,3 @@
-import Navbar from './components/Navbar'
 import { Route, Routes } from 'react-router-dom'
 import Login from './pages/Auth/Login'
 import Home from './pages/Home'
@@ -17,45 +16,56 @@ import ChapterLinks from './components/Chapter/ChapterLinks'
 import ChapterExercises from './components/Chapter/ChapterExercises'
 import ChapterSummary from './components/Chapter/ChapterSummary'
 import Courses from './pages/Courses'
-import Admin from './pages/Admin/Admin'
 import Cart from './pages/Cart'
 import Profile from './pages/Profile'
-import Footer from './components/Footer'
+import Dashboard from './components/Admin/Dashboard'
+import Users from './components/Admin/Users'
+import Settings from './components/Admin/Settings'
+import HomeLayout from './components/HomeLayout/HomeLayout'
+import AdminLayout from './pages/AdminLayout'
+
 
 function App() {
   return (
-    <div>
-      <Navbar/>
-      <Routes>
-        <Route path='/' element={<Home />}/>
-        <Route path='/login' element={<Login />}/>
-        <Route path='/signup' element={<Signup />}/>
-        <Route path='/forgetpass' element={<ForgetPass />}/>
-        <Route path='/error' element={<NotFound />}/>
-        <Route path='/contactus' element={<ContactUs />}/>
-        <Route path='/courses' element={<Courses />}/>
-        <Route path='/cart' element={<Cart />}/>
-        <Route path='/profile' element={<Profile />}/>
-        {/* Nested For Course */}
-        <Route path='/courses/:courseId' element={<Course />}>
-          <Route path='' element={<CourseDescription />} />
+    <Routes>
+      {/* 🔹 Public/User Layout */}
+      <Route element={<HomeLayout />}>
+        <Route path="/" element={<Home />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/signup" element={<Signup />} />
+        <Route path="/forgetpass" element={<ForgetPass />} />
+        <Route path="/error" element={<NotFound />} />
+        <Route path="/contactus" element={<ContactUs />} />
+        <Route path="/courses" element={<Courses />} />
+        <Route path="/cart" element={<Cart />} />
+        <Route path="/profile" element={<Profile />} />
+
+        {/* Nested for Course */}
+        <Route path="/courses/:courseId" element={<Course />}>
+          <Route index element={<CourseDescription />} />
           <Route path="chapters" element={<CourseChapters />} />
           <Route path="comments" element={<CourseComments />} />
-          <Route path='exam' element={<CourseExam />}/>
+          <Route path="exam" element={<CourseExam />} />
         </Route>
-          {/* Nested For Chapter */}
-        <Route path='/courses/:courseId/chapters/:chapterId' element={<Chapter/>}>
-          <Route path='' element={<ChapterLinks/>}/>
-          <Route path='exercises' element={<ChapterExercises/>}/>
-          <Route path='summary' element={<ChapterSummary/>}/>
+
+        {/* Nested for Chapter */}
+        <Route path="/courses/:courseId/chapters/:chapterId" element={<Chapter />}>
+          <Route index element={<ChapterLinks />} />
+          <Route path="exercises" element={<ChapterExercises />} />
+          <Route path="summary" element={<ChapterSummary />} />
         </Route>
-        {/* Admin Routes */}
-        <Route path='/admin' element={<Admin />}>
-          {/* no routes yet */}
-        </Route>
-      </Routes>
-      <Footer/>
-    </div>
+      </Route>
+
+      {/* 🔹 Admin Layout */}
+      <Route path="/admin" element={<AdminLayout />}>
+        <Route path="dashboard" element={<Dashboard />} />
+        <Route path="users" element={<Users />} />
+        <Route path="settings" element={<Settings />} />
+      </Route>
+
+      {/* 404 fallback */}
+      <Route path="*" element={<NotFound />} />
+    </Routes>
   )
 }
 
