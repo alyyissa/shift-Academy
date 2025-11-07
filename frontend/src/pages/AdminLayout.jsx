@@ -6,7 +6,6 @@ import Navbar from "../components/HomeLayout/Navbar";
 const AdminLayout = () => {
   return (
     <>
-    <Navbar />
       <div className="flex h-dvh bg-gray-50">
         <Sidebar/>
 

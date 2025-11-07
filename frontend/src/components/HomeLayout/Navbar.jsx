@@ -1,10 +1,8 @@
 import { useRef, useEffect, useState } from "react";
-import { Link, useLocation } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { assets } from "../../assets/assets";
 
 const Navbar = () => {
-
-  const location = useLocation();
   const [showNav, setShowNav] = useState(false);
   const [isDesktop, setIsDesktop] = useState(window.innerWidth >= 768);
   const toggleNav = () => setShowNav(!showNav);
@@ -118,52 +116,49 @@ const Navbar = () => {
       </div>
 
       {/* Mobile Side Menu */}
-      {!location.pathname.startsWith("/admin") &&
-        <div
-          className={`fixed top-0 left-0 h-full w-[64%] bg-bgNav transform transition-transform duration-300 z-50 shadow-2xl
-          ${showNav ? "translate-x-0" : "-translate-x-full"}`}
-        >
-          <div className="p-5">
-            <button onClick={toggleNav} className="text-coprimary mb-5 ml-[-5px] cursor-pointer">
-              <i className="fa-solid fa-xmark"></i>
-            </button>
+      <div
+        className={`fixed top-0 left-0 h-full w-[64%] bg-bgNav transform transition-transform duration-300 z-50 shadow-2xl
+        ${showNav ? "translate-x-0" : "-translate-x-full"}`}
+      >
+        <div className="p-5">
+          <button onClick={toggleNav} className="text-coprimary mb-5 ml-[-5px] cursor-pointer">
+            <i className="fa-solid fa-xmark"></i>
+          </button>
 
-            <ul className="flex flex-col gap-6 mt-5">
-              <li>
-                <Link onClick={toggleNav} to="/" className="text-coprimary font-semibold">
-                  Home
-                </Link>
-              </li>
-              <li>
-                <Link onClick={toggleNav} to="/error" className="text-coprimary font-semibold">
-                  Courses
-                </Link>
-              </li>
-              <li>
-                <Link onClick={toggleNav} to="/contactus" className="text-coprimary font-semibold">
-                  Contact Us
-                </Link>
-              </li>
-              <li>
-                <Link onClick={toggleNav} to="/contactus" className="text-coprimary font-semibold">
-                  Pricing
-                </Link>
-              </li>
-              <li>
-                <Link onClick={toggleNav} to="/login" className="text-coprimary font-semibold">
-                  Login
-                </Link>
-              </li>
-              <li>
-                <Link onClick={toggleNav} to="/signup" className="text-coprimary font-semibold">
-                  Sign Up
-                </Link>
-              </li>
-            </ul>
-          </div>
+          <ul className="flex flex-col gap-6 mt-5">
+            <li>
+              <Link onClick={toggleNav} to="/" className="text-coprimary font-semibold">
+                Home
+              </Link>
+            </li>
+            <li>
+              <Link onClick={toggleNav} to="/error" className="text-coprimary font-semibold">
+                Courses
+              </Link>
+            </li>
+            <li>
+              <Link onClick={toggleNav} to="/contactus" className="text-coprimary font-semibold">
+                Contact Us
+              </Link>
+            </li>
+            <li>
+              <Link onClick={toggleNav} to="/contactus" className="text-coprimary font-semibold">
+                Pricing
+              </Link>
+            </li>
+            <li>
+              <Link onClick={toggleNav} to="/login" className="text-coprimary font-semibold">
+                Login
+              </Link>
+            </li>
+            <li>
+              <Link onClick={toggleNav} to="/signup" className="text-coprimary font-semibold">
+                Sign Up
+              </Link>
+            </li>
+          </ul>
         </div>
-      }
-
+      </div>
       {/* Dark Overlay (click to close) */}
       {showNav && (
         <div
