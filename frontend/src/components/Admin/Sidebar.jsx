@@ -33,19 +33,19 @@ return (
             href="#"
             className="flex items-center gap-3 p-2 rounded-md hover:bg-gray-800 transition"
           >
-            <Users size={20} /> Users
+            <Users /> Chapters
           </a>
           <a
             href="#"
             className="flex items-center gap-3 p-2 rounded-md hover:bg-gray-800 transition"
           >
-            <BarChart size={20} /> Analytics
+            <BarChart /> Courses
           </a>
           <a
             href="#"
             className="flex items-center gap-3 p-2 rounded-md hover:bg-gray-800 transition"
           >
-            <Settings size={20} /> Settings
+            <Settings /> Feedbacks
           </a>
         </nav>
       </aside>
