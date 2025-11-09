@@ -29,6 +29,14 @@ const Section2 = () => {
             question: "Can I customize the components?",
             answer: "Yes, you can customize the components by passing props to them. You can find more information about customizing components in the 'Customization' section of the website.",
         },
+        {
+            question: "Can I customize the components?",
+            answer: "Yes, you can customize the components by passing props to them. You can find more information about customizing components in the 'Customization' section of the website.",
+        },
+        {
+            question: "Can I customize the components?",
+            answer: "Yes, you can customize the components by passing props to them. You can find more information about customizing components in the 'Customization' section of the website.",
+        },
     ];
 
   return (
