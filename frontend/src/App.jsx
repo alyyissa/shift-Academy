@@ -3,7 +3,7 @@ import Login from './pages/Auth/Login'
 import Home from './pages/Home'
 import Signup from './pages/Auth/Signup'
 import ForgetPass from './pages/Auth/ForgetPass'
-import NotFound from './pages/Error.jsx/NotFound'
+import NotFound from './pages/404/NotFound'
 import ContactUs from './pages/ContactUs'
 import Course from './pages/Course'
 import Exam from './pages/Exam'
@@ -56,7 +56,7 @@ function App() {
         </Route>
       </Route>
 
-      {/* 🔹 Admin Layout */}
+      {/* Admin Layout */}
       <Route path="/admin" element={<AdminLayout />}>
         <Route path="dashboard" element={<Dashboard />} />
         <Route path="users" element={<Users />} />
@@ -64,7 +64,9 @@ function App() {
       </Route>
 
       {/* 404 fallback */}
-      <Route path="*" element={<NotFound />} />
+      <Route element={<HomeLayout />}>
+        <Route path="*" element={<NotFound />} />
+      </Route>
     </Routes>
   )
 }

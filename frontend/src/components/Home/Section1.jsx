@@ -12,7 +12,7 @@ const Section1 = () => {
         <div className="flex justify-center items-center gap-x-5 gap-y-12 lg:gap-y-0 flex-wrap md:flex-wrap lg:flex-nowrap lg:flex-row lg:justify-between lg:gap-x-8 mt-15">
           <div className="relative w-full text-center max-md:max-w-sm max-md:mx-auto group md:w-2/5 lg:w-1/4">
             <div
-              className="bg-indigo-50 rounded-lg flex justify-center items-center mb-5 w-20 h-20 mx-auto cursor-pointer transition-all duration-500 group-hover:bg-indigo-600">
+              className="bg-indigo-50 rounded-lg flex justify-center items-center mb-5 w-20 h-20 mx-auto transition-all duration-500 group-hover:bg-indigo-600">
               <svg className="stroke-indigo-600 transition-all duration-500 group-hover:stroke-white" width="30" height="30" viewBox="0 0 24 24" fill="none">
                 <path d="M4 7h16M4 12h10M4 17h6" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
               </svg>
@@ -27,7 +27,7 @@ const Section1 = () => {
 
           <div className="relative w-full text-center max-md:max-w-sm max-md:mx-auto group md:w-2/5 lg:w-1/4">
             <div
-              className="bg-red-50 rounded-lg flex justify-center items-center mb-5 w-20 h-20 mx-auto cursor-pointer transition-all duration-500 group-hover:bg-red-600">
+              className="bg-red-50 rounded-lg flex justify-center items-center mb-5 w-20 h-20 mx-auto transition-all duration-500 group-hover:bg-red-600">
               <svg className="stroke-red-600 transition-all duration-500 group-hover:stroke-white" width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M6 5.5v19c0 .83.9 1.35 1.63.9L23 17.5c.7-.43.7-1.5 0-1.93L7.63 4.6C6.9 4.15 6 4.68 6 5.5z" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
               </svg>
@@ -42,7 +42,7 @@ const Section1 = () => {
 
           <div className="relative w-full text-center max-md:max-w-sm max-md:mx-auto group md:w-2/5 lg:w-1/4">
             <div
-              className="bg-teal-50 rounded-lg flex justify-center items-center mb-5 w-20 h-20 mx-auto cursor-pointer transition-all duration-500 group-hover:bg-teal-600">
+              className="bg-teal-50 rounded-lg flex justify-center items-center mb-5 w-20 h-20 mx-auto transition-all duration-500 group-hover:bg-teal-600">
               <svg className="stroke-teal-600 transition-all duration-500 group-hover:stroke-white" width="30" height="30" viewBox="0 0 24 24" fill="none">
                 <path d="M12 8v4l3 3M5.5 4h13a1.5 1.5 0 0 1 1.5 1.5v13a1.5 1.5 0 0 1-1.5 1.5h-13A1.5 1.5 0 0 1 4 18.5v-13A1.5 1.5 0 0 1 5.5 4Z" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
               </svg>
@@ -56,7 +56,7 @@ const Section1 = () => {
           </div>
           <div className="relative w-full text-center max-md:max-w-sm max-md:mx-auto group md:w-2/5 lg:w-1/4">
             <div
-              className="bg-orange-50 rounded-lg flex justify-center items-center mb-5 w-20 h-20 mx-auto cursor-pointer transition-all duration-500 group-hover:bg-orange-600">
+              className="bg-orange-50 rounded-lg flex justify-center items-center mb-5 w-20 h-20 mx-auto transition-all duration-500 group-hover:bg-orange-600">
               <svg className="stroke-orange-600 transition-all duration-500 group-hover:stroke-white" width="30" height="30" viewBox="0 0 24 24" fill="none">
                 <path d="M12 2 2 7l10 5 10-5-10-5Zm0 15v5m-6-3h12" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
               </svg>

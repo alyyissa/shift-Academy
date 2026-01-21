@@ -57,11 +57,12 @@ const Navbar = () => {
           <i className="fa-solid fa-bars text-coprimary" onClick={toggleNav}></i>
         </div>
 
-        <img
-        src={isDesktop ? assets.logo : assets.small_logo}
-        alt="Logo"
-        />
-
+        <Link to="/">
+          <img
+            src={isDesktop ? assets.logo : assets.small_logo}
+            alt="Logo"
+          />
+        </Link>
         <div className="hidden md:block">
           <ul className="flex flex-row gap-10">
             <li>
