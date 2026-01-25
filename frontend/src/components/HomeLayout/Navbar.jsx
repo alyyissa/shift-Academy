@@ -80,16 +80,17 @@ const Navbar = () => {
                 Contact Us
               </Link>
             </li>
-            <li>
+            {/* <li>
               <Link to="/contactus" className="text-coprimary font-semibold">
                 Pricing
               </Link>
-            </li>
+            </li> */}
           </ul>
         </div>
 
         <div className="hidden md:block">
           <ul className="flex flex-row gap-2">
+            {/* <button></button> */}
             <li>
               <Link
                 to="/login"
